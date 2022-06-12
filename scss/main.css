@@ -1,0 +1,163 @@
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.customdivforicons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.badge-notify {
+  background: red;
+  position: relative;
+  top: -25px;
+  left: -25px;
+}
+
+.customcssdropdown {
+  width: 300px;
+  margin-top: -8px;
+}
+
+.customsize {
+  margin-top: -10px;
+  margin-right: -8px;
+}
+
+.customsizelogo {
+  margin-top: -30px;
+}
+
+.customcssforprofile {
+  margin-top: -8px;
+}
+
+.btn-custom:hover, .btn-custom:focus, .btn-custom:active, .dropdown-toggle.btn-custom {
+  background-color: #9d4cf5;
+  color: white;
+  border: #9d4cf5;
+}
+
+.navbar {
+  background: #f5f5f5;
+  height: 60px;
+}
+
+.sidebar {
+  background: #293042;
+  margin-top: 50px;
+  padding-top: 30px;
+  position: fixed;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  -webkit-transition: .5s;
+  transition: .5s;
+  -webkit-transition-property: left;
+  transition-property: left;
+  overflow: scroll;
+}
+
+.sidebar a {
+  color: white;
+  display: block;
+  width: 100%;
+  line-height: 60px;
+  text-decoration: none;
+  padding-left: 40px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: .5s;
+  transition: .5s;
+  -webkit-transition-property: background;
+  transition-property: background;
+}
+
+.sidebar a:hover {
+  background: #19B3D3;
+  color: white;
+  font-weight: bolder;
+}
+
+.sidebar i {
+  padding-right: 10px;
+}
+
+#check:checked ~ .sidebar label i {
+  z-index: 1;
+  color: white;
+  position: fixed;
+  cursor: pointer;
+  left: 20px;
+  margin: 5px 0;
+  -webkit-transition: .5s ease-in;
+  transition: .5s ease-in;
+  -webkit-transition-property: color;
+  transition-property: color;
+}
+
+#check {
+  display: none;
+}
+
+.sidebar label #btn, label #cancel {
+  position: absolute;
+  cursor: pointer;
+  background: #293042;
+  border-radius: 3px;
+}
+
+.sidebar label #btn {
+  left: -205px;
+  top: 20px;
+  font-size: 30px;
+  color: white;
+}
+
+#check:checked ~ .sidebar label #cancel {
+  display: none;
+}
+
+#check:checked ~ .sidebar {
+  left: 0;
+}
+
+#check:checked ~ label #btn {
+  left: 250px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+#check:checked ~ .sidebar {
+  left: -190px;
+}
+
+#check:checked ~ .sidebar a span {
+  display: none;
+}
+
+#check:checked ~ .sidebar a {
+  font-size: 20px;
+  margin-left: 170px;
+  width: 80px;
+}
+
+#check:checked ~ .sidebar label #btn {
+  left: 20px;
+  top: 85px;
+  font-size: 30px;
+  color: white;
+}
+
+.sidebar label #cancel {
+  left: 210px;
+  top: 20px;
+  font-size: 30px;
+  color: white;
+}
+/*# sourceMappingURL=main.css.map */

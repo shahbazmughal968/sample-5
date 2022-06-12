@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+        integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="scss/main.css">
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Navbar code start from here -->
+    <nav class="navbar justify-content-between fixed-top">
+        <!-- logo image code start from here -->
+        <a href="#" class="navbar-brand ms-2 customsizelogo">
+            <img src="images/logo.png" alt="" width="50" height="50">
+        </a>
+        <!-- logo image code End's here -->
+
+        <div class="customdivforicons ms-auto">
+
+            <!-- Messages icon code start from here -->
+            <ul class="list-unstyled">
+                <li class="nav-item"><a href="" class="fs-2 text-decoration-none" style="color: #293042;">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                    <span class="badge badge-notify rounded-circle">3</span>
+                </li>
+
+            </ul>
+            <!-- Messages icon code End's here -->
+
+
+            <!-- Notification icon code start from here -->
+            <ul class="list-unstyled">
+                <li class="nav-item dropdown">
+                    <a href="#" class="fs-2 text-decoration-none" data-bs-toggle="dropdown" style="color: #293042;">
+                        <i class="fas fa-bell"></i>
+                    </a>
+                    <span class="badge badge-notify rounded-circle">2</span>
+                    <!-- Notification dropdown menu code start from here -->
+                    <div class="dropdown-menu dropdown-menu-sm dropdown-menu-end me-1 shadow-lg p-3 mb-5 rounded customcssdropdown">
+                        <div class="dropdown-menu-header text-info text-center fw-bold">2 New Notifications</div>
+                        <a href="#" class="dropdown-item text-wrap"><i
+                                class="fas fa-info-circle text-warning me-1"></i><span
+                                class="text-success fw-bold">Update Completed</span>
+                            <br>
+                            Restart server 12 to complete the update. <br>
+                            <span class="text-muted">2 hours ago</span>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item text-wrap"><i
+                                class="fas fa-info-circle text-warning me-1"></i><span
+                                class="text-success fw-bold">Lorem, ipsum.</span>
+                            <br>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, dignissimos. <br>
+                            <span class="text-muted">9 hours ago</span>
+                        </a>
+                    </div>
+                    <!-- Notification dropdown menu code End's here -->
+ 
+
+
+                </li>
+            </ul>
+            <!-- Notification icon code End's here -->
+
+
+        </div>
+
+        <!-- Profile code start from here -->
+        <ul class="list-unstyled">
+            <li class="nav-item dropdown">
+
+                <!-- Profile Icon code start from here -->
+                <a href="#" class="nav-link" data-bs-toggle="dropdown">
+                    <span><img src="images/user.png" alt="" height="50" width="50" class="rounded-circle z-depth-0 customsize"></span>
+                </a>
+                <!-- Profile Icon code End's here -->
+
+                <!-- Profile dropdown menu code start from here -->
+                <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end me-1 shadow-lg p-3 mb-5 rounded customcssforprofile">
+                    <a href="#" class="btn btn-custom dropdown-item"><i class="fas fa-user me-1"></i>Profile</a>
+                    <a href="#" class="btn btn-custom dropdown-item"><i class="fas fa-chart-pie me-1"></i>Analytics</a>
+                    <div class="dropdown-divider"></div>
+                    <a href="#" class="btn btn-custom dropdown-item">Setting & Privacy</a>
+                    <a href="#" class="btn btn-custom dropdown-item">Help</a>
+                    <a href="#" class="btn btn-custom dropdown-item">Sign out</a>
+
+                
+                </div>
+                <!-- Profile dropdown menu code End's here -->
+
+
+            </li>
+        </ul>
+        <!-- Profile  code End's here -->
+
+    </nav>
+     <!-- Navbar code End's here -->
+
+
+     <!-- sidemenu section code start from here -->
+<input type="checkbox" id="check" >
+<div class="sidebar">
+
+    <label for="check">
+        <i class="fas fa-bars" id="btn"></i>
+        <i class="fas fa-times" id="cancel"></i>
+    </label>
+
+    <div class="mt-3">
+        <a href="#"> <i class="fas fa-desktop" style="color: rgb(4,87,155);"></i>
+        <span>Dashboard</span>
+        </a>
+        <a href="#"> <i class="fas fa-table" style="color: rgb(187,255,0);"></i>
+            <span>Posts</span>
+            </a>
+            <a href="#"> <i class="fas fa-users" style="color: rgb(255,115,0);"></i>
+                <span>Users</span>
+                </a>
+                <a href="#"> <i class="fas fa-cogs" style="color: rgb(162,0,255);"></i>
+                    <span>Settings</span>
+                    </a>
+                    <a href="#"> <i class="fas fa-power-off" style="color: red;"></i>
+                        <span>Logout</span>
+                        </a>
+    </div>
+</div>
+     <!-- sidemenu section code End's here -->
+
+
+</body>
+
+</html>
